@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>XX管理系统</title>
+    <title>智乐送后台管理系统</title>
     [#include "/admin/header.ftl"]
     <!-- iCheck -->
     <script src="${rc.contextPath}/statics/common/icheck/icheck.min.js"></script>
@@ -19,13 +19,12 @@
     <div class="sidebar-collapse">
         <ul class="nav" id="side-menu">
             <li class="nav-header">
-                <div class="dropdown profile-element"><span> </span> 
-                	<span class="default-avatar">
+                <div class="dropdown profile-element"><span> </span>
+                    <span class="default-avatar">
                 		<img alt="image" width="58" height="58" class="img-circle" src="${rc.contextPath}/${admin.avatarUrl!""}"></span>
-                	<a
-                        data-toggle="dropdown" class="dropdown-toggle" href="javascript:void(0);"> <span class="clear"> <span
-                        class="block m-t-xs"><strong class="font-bold">${admin.username}</strong></span> <span
-                        class="text-muted text-xs block">${admin.email}<b class="caret"></b></span> </span> </a>
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="javascript:void(0);"> <span class="clear"> <span
+                            class="block m-t-xs"><strong class="font-bold">${admin.username}</strong></span> <span
+                            class="text-muted text-xs block">${admin.email}<b class="caret"></b></span> </span> </a>
                     <ul class="dropdown-menu animated fadeInRight m-t-xs">
                         <li><a class="J_menuItem" href="${rc.contextPath}/admin/sys/user/view"
                                data-index="1">个人资料</a></li>
@@ -38,17 +37,17 @@
             </li>
             [#list menuList as list]
 	            <li><a href="javascript:void(0);" aria-expanded="false"> <i
-	                    class="${list.icon}"></i> <span class="nav-label">${list.name}</span> <span class="fa arrow"></span> </a>
-	                <ul class="nav nav-second-level collapse" aria-expanded="false" style="height: 0px;">
+                        class="${list.icon}"></i> <span class="nav-label">${list.name}</span> <span class="fa arrow"></span> </a>
+                    <ul class="nav nav-second-level collapse" aria-expanded="false" style="height: 0px;">
 	                
 	                [#if list.list??]
 			            	[#list list.list as children]
 				                    <li><a class="J_menuItem" href="${rc.contextPath}/${children.url}"
-				                           data-index="${children_index}"><i class="${children.icon}"></i>${children.name}</a></li>
-			            	[/#list]
-            		[/#if]
-	                </ul>
-	            </li>
+                                           data-index="${children_index}"><i class="${children.icon}"></i>${children.name}</a></li>
+                            [/#list]
+                    [/#if]
+                    </ul>
+                </li>
             [/#list]
         </ul>
     </div>

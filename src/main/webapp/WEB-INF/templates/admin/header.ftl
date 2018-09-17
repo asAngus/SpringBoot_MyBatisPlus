@@ -1,5 +1,5 @@
 <meta charset="UTF-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<!--自动适应移动屏幕-->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -8,7 +8,7 @@
 	<!--不要被百度转码-->
 	<meta http-equiv="Cache-Control" content="no-siteapp"/>
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-	<meta name="author" content="${author}" />
+	<meta name="author" content="${author}"/>
 	<meta name="keywords" content="${keywords}">
 	<meta name="description" content="${description}">
  	<link rel="stylesheet" href="${rc.contextPath}/statics/common/bootstrap/css/bootstrap.min.css"/>

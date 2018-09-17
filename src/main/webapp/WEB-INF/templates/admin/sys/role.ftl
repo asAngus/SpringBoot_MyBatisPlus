@@ -58,23 +58,23 @@
                                            data-single-select="false" [#-- 设置True 将禁止多选 --]
                                            data-unique-id="roleId" [#-- 填写主键ID即可 --][#-- 官方文档:http://bootstrap-table.wenzhixin.net.cn/zh-cn/documentation/ --]
                                            data-response-handler="defaultBootstarpTableHandler">
-                                    <thead>
-                                    <tr>
-                                        <th data-checkbox="true"></th>
-                                        <th data-field="roleName" data-halign="center" data-align="center"
-                                            data-sortable="true">角色名称
-                                        </th>
-                                        <th data-field="remark" data-halign="center" data-align="center"
-                                            data-sortable="true">备注
-                                        </th>
-                                        <th data-field="createTime" data-formatter="BootstrapTableformatDate"
-                                            data-sortable="true" data-halign="center" data-align="center">创建时间
-                                        </th>
-                                        <th data-formatter="actionFormatter" data-events="actionEvents"
-                                            data-halign="center" data-align="center">操作
-                                        </th>
-                                    </tr>
-                                    </thead>
+                                        <thead>
+                                        <tr>
+                                            <th data-checkbox="true"></th>
+                                            <th data-field="roleName" data-halign="center" data-align="center"
+                                                data-sortable="true">角色名称
+                                            </th>
+                                            <th data-field="remark" data-halign="center" data-align="center"
+                                                data-sortable="true">备注
+                                            </th>
+                                            <th data-field="createTime" data-formatter="BootstrapTableformatDate"
+                                                data-sortable="true" data-halign="center" data-align="center">创建时间
+                                            </th>
+                                            <th data-formatter="actionFormatter" data-events="actionEvents"
+                                                data-halign="center" data-align="center">操作
+                                            </th>
+                                        </tr>
+                                        </thead>
                                     </table>
                                     <input type='hidden' id="handle"
                                          [@shiro.hasPermission name="sys:role:update" ] data-update="true" [/@shiro.hasPermission]

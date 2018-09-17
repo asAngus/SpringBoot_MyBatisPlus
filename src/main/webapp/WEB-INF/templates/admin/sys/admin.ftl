@@ -86,36 +86,36 @@
                                            data-click-to-select="true" [#-- 设置true 将在点击行时，自动选择rediobox 和 checkbox --]
                                            data-single-select="false" [#-- 设置True 将禁止多选 --]
                                            data-unique-id="userId" [#-- 填写主键ID即可 --][#-- 官方文档:http://bootstrap-table.wenzhixin.net.cn/zh-cn/documentation/ --]
-                                    	   data-response-handler="defaultBootstarpTableHandler">
-                                    <thead>
-                                    <tr>
-                                        <th data-checkbox="true"></th>
-                                        <th data-field="username" data-halign="center" data-align="center"
-                                            data-sortable="true">用户名
-                                        </th>
-                                        <th data-field="email" data-halign="center" data-align="center"
-                                            data-sortable="true">邮箱
-                                        </th>
-                                        <th data-field="mobile"
-                                            data-sortable="true" data-halign="center" data-align="center">手机号
-                                        </th>
-                                        <th data-field="status" data-formatter="formatStatus"
-                                            data-sortable="true" data-halign="center" data-align="center">状态
-                                        </th>
-                                        <th data-field="lastLoginIp"
-                                            data-sortable="true" data-halign="center" data-align="center">最后登录IP
-                                        </th>
-                                        <th data-field="lastLoginTime" data-formatter="BootstrapTableformatDate"
-                                            data-sortable="true" data-halign="center" data-align="center">最后登录时间
-                                        </th>
-                                        <th data-field="createTime" data-formatter="BootstrapTableformatDate"
-                                            data-sortable="true" data-halign="center" data-align="center">创建时间
-                                        </th>
-                                        <th data-formatter="actionFormatter" data-events="actionEvents"
-                                            data-halign="center" data-align="center">操作
-                                        </th>
-                                    </tr>
-                                    </thead>
+                                           data-response-handler="defaultBootstarpTableHandler">
+                                        <thead>
+                                        <tr>
+                                            <th data-checkbox="true"></th>
+                                            <th data-field="username" data-halign="center" data-align="center"
+                                                data-sortable="true">用户名
+                                            </th>
+                                            <th data-field="email" data-halign="center" data-align="center"
+                                                data-sortable="true">邮箱
+                                            </th>
+                                            <th data-field="mobile"
+                                                data-sortable="true" data-halign="center" data-align="center">手机号
+                                            </th>
+                                            <th data-field="status" data-formatter="formatStatus"
+                                                data-sortable="true" data-halign="center" data-align="center">状态
+                                            </th>
+                                            <th data-field="lastLoginIp"
+                                                data-sortable="true" data-halign="center" data-align="center">最后登录IP
+                                            </th>
+                                            <th data-field="lastLoginTime" data-formatter="BootstrapTableformatDate"
+                                                data-sortable="true" data-halign="center" data-align="center">最后登录时间
+                                            </th>
+                                            <th data-field="createTime" data-formatter="BootstrapTableformatDate"
+                                                data-sortable="true" data-halign="center" data-align="center">创建时间
+                                            </th>
+                                            <th data-formatter="actionFormatter" data-events="actionEvents"
+                                                data-halign="center" data-align="center">操作
+                                            </th>
+                                        </tr>
+                                        </thead>
                                     </table>
                                     <input type='hidden' id="handle"
                                         [@shiro.hasPermission name="sys:user:update" ] data-update="true" [/@shiro.hasPermission]

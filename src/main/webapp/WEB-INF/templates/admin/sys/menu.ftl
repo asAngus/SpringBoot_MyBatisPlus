@@ -88,37 +88,37 @@
                                            data-click-to-select="true" [#-- 设置true 将在点击行时，自动选择rediobox 和 checkbox --]
                                            data-single-select="false" [#-- 设置True 将禁止多选 --]
                                            data-unique-id="menuId" [#-- 填写主键ID即可 --][#-- 官方文档:http://bootstrap-table.wenzhixin.net.cn/zh-cn/documentation/ --]
-	                                       data-response-handler="defaultBootstarpTableHandler"
-	                                       data-striped="true">
-                                    <thead>
-                                    <tr>
-                                        <th data-checkbox="true"></th>
-                                        <th data-field="name" data-halign="center" data-align="center"
-                                            data-sortable="true">菜单名称
-                                        </th>
-                                        <th data-field="parentName" data-halign="center" data-align="center"
-                                            data-sortable="true">上级菜单
-                                        </th>
-                                        <th data-field="icon" data-formatter="formatIcon" data-sortable="true"
-                                            data-halign="center" data-align="center">菜单图标
-                                        </th>
-                                        <th data-field="url" data-sortable="true" data-halign="center"
-                                            data-align="center">菜单URL
-                                        </th>
-                                        <th data-field="perms" data-sortable="true" data-halign="center"
-                                            data-align="center">授权标识
-                                        </th>
-                                        <th data-field="type" data-formatter="formatType" data-sortable="true"
-                                            data-halign="center" data-align="center">类型
-                                        </th>
-                                        <th data-field="orderNum" data-sortable="true" data-halign="center"
-                                            data-align="center">排序号
-                                        </th>
-                                        <th data-formatter="actionFormatter" data-events="actionEvents"
-                                            data-halign="center" data-align="center">操作
-                                        </th>
-                                    </tr>
-                                    </thead>
+                                           data-response-handler="defaultBootstarpTableHandler"
+                                           data-striped="true">
+                                        <thead>
+                                        <tr>
+                                            <th data-checkbox="true"></th>
+                                            <th data-field="name" data-halign="center" data-align="center"
+                                                data-sortable="true">菜单名称
+                                            </th>
+                                            <th data-field="parentName" data-halign="center" data-align="center"
+                                                data-sortable="true">上级菜单
+                                            </th>
+                                            <th data-field="icon" data-formatter="formatIcon" data-sortable="true"
+                                                data-halign="center" data-align="center">菜单图标
+                                            </th>
+                                            <th data-field="url" data-sortable="true" data-halign="center"
+                                                data-align="center">菜单URL
+                                            </th>
+                                            <th data-field="perms" data-sortable="true" data-halign="center"
+                                                data-align="center">授权标识
+                                            </th>
+                                            <th data-field="type" data-formatter="formatType" data-sortable="true"
+                                                data-halign="center" data-align="center">类型
+                                            </th>
+                                            <th data-field="orderNum" data-sortable="true" data-halign="center"
+                                                data-align="center">排序号
+                                            </th>
+                                            <th data-formatter="actionFormatter" data-events="actionEvents"
+                                                data-halign="center" data-align="center">操作
+                                            </th>
+                                        </tr>
+                                        </thead>
                                     </table>
                                     <input type='hidden' id="handle"
                                         [@shiro.hasPermission name="sys:menu:update" ] data-update="true" [/@shiro.hasPermission]
